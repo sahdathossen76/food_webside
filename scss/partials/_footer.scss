@@ -1,5 +1,26 @@
 /*------------Footer Start-------------*/
 .footer{
-    padding: 5rem 2.5rem;
-    
+    background: rgba($dark, 0.9);
+    margin-top: 3rem;
+    &__links{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 0.8rem;
+        .btn{
+            padding:.5rem 2.1rem;
+            font-size: 1.5rem;
+        }
+    }
+    &__page--cradit{
+        @include text;
+        text-align: center;
+        color: rgba($white, 0.9);
+        margin-top: 1.2rem;
+        span{
+            @include span;
+        }
+    }
 }

@@ -11,8 +11,9 @@
     &__area{
         display: flex;
         flex-wrap: wrap;
-        gap: 1.5rem;
-        border: 1.6rem solid rgba($white, 0.9);
+        background: rgba($white, 0.9);
+        gap: 1.2rem;
+        border: 1.6rem solid rgba($white, 0.1);
         box-shadow: 0 0.5rem 1rem rgba($dark, 0.2);
         border-radius: 0.7rem;
         &--img{
@@ -33,14 +34,13 @@
             input{
                 padding:1rem;
                 margin:1rem 0;
-                font-size: 1.7rem;
                 text-transform: none;
                 border-radius: .5rem;
                 width:100%;
-                background: #fbfbfc;
                 border: 1px solid rgba($dark, 0.2);
                 border-radius: 0.7rem;
-                font-size: 1.2rem;
+                font-size: 2.2rem;
+                text-transform: capitalize;
             }
         }
     }
@@ -50,9 +50,11 @@
         grid-template-areas: "name     email"
                             "number  food-name"
                             "address  address"
-                            "button        .";
+                            "button        button";
         column-gap: 1.5rem;
-        margin: 1.5rem;                 
+        margin: 1.5rem; 
+        width: 100%;
+        align-self: center;                
     }
     &__name{
         grid-column: name;
@@ -68,8 +70,20 @@
     }
     &__masseage{
         grid-column: address;
+        height: 12rem;
+        padding-bottom: 1.5rem;
+        input{
+            height: 100%;
+        }
     }
     &__area--btn{
-        margin-right: auto;
+        @include computer_lg ($min-screen : 1065px) {
+            margin-right: auto;
+        }   
+        grid-column: button;
+        margin: 0 auto;
+        
+        margin-top: 1.2rem;
+        font-size: 2.5rem;
     }
 }

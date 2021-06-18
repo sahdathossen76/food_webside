@@ -121,6 +121,7 @@ section {
   overflow: hidden;
   z-index: 0;
   margin-top: 1rem;
+  white-space: nowrap;
 }
 
 .btn::before {
@@ -687,6 +688,12 @@ section {
 }
 
 .review__card--title {
+  font-size: 2.8rem;
+  font-weight: 900;
+  font-family: "Nunito", sans-serif;
+  line-height: 1.2;
+  color: rgba(34, 33, 33, 0.9);
+  white-space: nowrap;
   color: rgba(255, 255, 255, 0.9);
 }
 
@@ -725,8 +732,9 @@ section {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 1.5rem;
-  border: 1.6rem solid rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.9);
+  gap: 1.2rem;
+  border: 1.6rem solid rgba(255, 255, 255, 0.1);
   -webkit-box-shadow: 0 0.5rem 1rem rgba(34, 33, 33, 0.2);
           box-shadow: 0 0.5rem 1rem rgba(34, 33, 33, 0.2);
   border-radius: 0.7rem;
@@ -759,14 +767,13 @@ section {
 .contact__area--form input {
   padding: 1rem;
   margin: 1rem 0;
-  font-size: 1.7rem;
   text-transform: none;
   border-radius: .5rem;
   width: 100%;
-  background: #fbfbfc;
   border: 1px solid rgba(34, 33, 33, 0.2);
   border-radius: 0.7rem;
-  font-size: 1.2rem;
+  font-size: 2.2rem;
+  text-transform: capitalize;
 }
 
 .contact__area--form {
@@ -774,10 +781,13 @@ section {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-      grid-template-areas: "name     email" "number  food-name" "address  address" "button        .";
+      grid-template-areas: "name     email" "number  food-name" "address  address" "button        button";
   -webkit-column-gap: 1.5rem;
           column-gap: 1.5rem;
   margin: 1.5rem;
+  width: 100%;
+  -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .contact__name {
@@ -798,14 +808,66 @@ section {
 
 .contact__masseage {
   grid-column: address;
+  height: 12rem;
+  padding-bottom: 1.5rem;
+}
+
+.contact__masseage input {
+  height: 100%;
 }
 
 .contact__area--btn {
-  margin-right: auto;
+  grid-column: button;
+  margin: 0 auto;
+  margin-top: 1.2rem;
+  font-size: 2.5rem;
+}
+
+@media screen and (min-device-width: 1065px) {
+  .contact__area--btn {
+    margin-right: auto;
+  }
 }
 
 /*------------Footer Start-------------*/
 .footer {
-  padding: 5rem 2.5rem;
+  background: rgba(34, 33, 33, 0.9);
+  margin-top: 3rem;
+}
+
+.footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  gap: 0.8rem;
+}
+
+.footer__links .btn {
+  padding: .5rem 2.1rem;
+  font-size: 1.5rem;
+}
+
+.footer__page--cradit {
+  font-size: 1.7rem;
+  font-weight: "Merriweather", serif;
+  font-family: "Nunito", sans-serif;
+  color: rgba(167, 167, 167, 0.9);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 1.2rem;
+}
+
+.footer__page--cradit span {
+  color: rgba(255, 56, 56, 0.9);
 }
 /*# sourceMappingURL=main.css.map */

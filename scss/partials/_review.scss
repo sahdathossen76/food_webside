@@ -22,6 +22,7 @@
         box-shadow: 0 0.5rem 1rem rgba($dark, 0.2);
         border-radius: 0.7rem;
         &--title{
+            @include card-title;
             color: rgba($white, 0.9);
         }
         &--image{
