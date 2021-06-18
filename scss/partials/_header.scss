@@ -1,0 +1,72 @@
+/*---------------Menu Start---------------*/
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: $white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-shadow: 0 .5rem 1rem rgba($dark, 0.1);
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo{
+        font-size: 2.5rem;
+        font-weight: $fw-b;
+        color: rgba($dark-gray, 0.9);
+        i{
+            color: rgba($red, 0.9);
+        }
+    }
+    &__bar{
+        font-size: 3rem;
+        cursor: pointer;
+        color: rgba($dark-gray, 0.9);
+        border: .1rem solid $dark-gray;
+        border-radius: .3rem;
+        padding: 0.4rem 1.5rem;
+        display: none;
+        @include tablet ($min-screen : 170px, $max-screen : 769px){
+            display: inline;
+        }
+    }
+    &__navbar{
+        @include mobile ($max-screen : 768px){
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: $light-gray;
+            border-top: 0.1rem solid rgba($dark, 0.1);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+            &.active{
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            }
+
+            a{
+                margin: 1.5rem;
+                padding: 1.5rem;
+                display: block;
+                border: 0.2rem solid rgba($dark, 0.1);
+                border-left: 0.5rem solid rgba($red, 0.9);
+                color: $white;
+            }
+        }
+        a{
+            color: rgba($dark-gray, 0.9);
+            margin-left: 2rem;
+            font-size: 2.125rem;
+            &:hover{
+                color: $red;
+            }
+        }
+        
+    }
+}
+

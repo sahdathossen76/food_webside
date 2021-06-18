@@ -1,0 +1,51 @@
+.gallery{
+    &__title{
+        @include heading;
+        text-align: center;
+        span{
+            @include span;
+        }
+    }
+    &__cards{
+        display: flex;
+        flex-wrap: wrap; 
+        align-items: center;
+        gap: 1.5rem;
+    }
+    &__card{
+        flex: 1 1 30rem;
+        position: relative;
+        overflow: hidden;
+        border: 1rem solid rgba($white, 0.8);
+        box-shadow: 0 0.5rem 1rem rgba($dark, 0.1);
+        cursor: pointer;
+        &:hover .gallery__card--text-area,
+        &:focus .gallery__card--text-area{
+            top: 0;
+            transition: ease-in-out 250ms;
+        }
+        &-img{
+            width: 100%;
+        }
+        &--text-area{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            top: -100%;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba($white, 0.6);
+            position: absolute;
+            text-align: center;
+            padding: 2rem
+        }
+        &--heading{
+            @include heading;
+            font-size: 2.125rem;
+        }
+        &__card--btn{
+            
+        }
+    }
+}

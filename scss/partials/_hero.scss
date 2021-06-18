@@ -1,0 +1,73 @@
+/*------------ Hero Section ---------------
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+    min-height: 100vh;
+    background: url(/img/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include speace;
+    &__content{
+        flex:1 1 40rem;
+    }
+    &__image{
+        flex:1 1 40rem;
+        img{
+            min-width: 100%;   
+            padding:1rem;
+            animation:float 3s linear infinite;
+        }
+    }
+}
+*/
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+    background: url(/img/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    .container{
+        @include computer_lg ($min-screen : 650px){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "content     image";
+        align-items: center;
+    }
+        gap: 1.5rem;
+    }
+    &__content{
+        grid-column: content;
+        padding: 3rem auto;
+        h1{
+            @include heading;
+            span{
+                @include span;
+            }
+        }
+        p{
+            @include text;
+        }
+    }
+    &__image{
+        grid-column: image;
+
+        img{
+            width: 100%;  
+            padding:.5rem;
+            animation:float 3s linear infinite;
+        }
+    }
+}
+@keyframes float{
+    0%, 100%{
+      transform: translateY(0rem);
+    }
+    50%{
+      transform: translateY(3rem);
+    }
+  }

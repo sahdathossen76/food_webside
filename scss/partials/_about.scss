@@ -1,0 +1,32 @@
+/*------------ About Me Section ---------------*/
+.about-us{
+    .container{
+        padding: 1rem;
+    }
+  &__title{
+      text-align: center;
+      @include heading;
+      font-size: 2.125rem;
+      span{
+          @include span;
+      }
+  }
+  &__cards{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+  }
+  &__card{
+      flex: 1 1 25rem;
+      text-align: center;
+      img{
+        border: 1.5rem solid rgba($white, 0.8);
+        border-radius: 50%; 
+        box-shadow: 0 0.5rem 1rem rgba($dark, 0.1);
+        @include mobile{
+            min-width: 26rem;
+        }
+      }
+  }
+
+}

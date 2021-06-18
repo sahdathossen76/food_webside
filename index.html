@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo webside</title>
+    <!-- font-awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- Style Css -->
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="nav">
+        <div class="container">
+            <a href="#" class="nav__logo"><i class="fas fa-utensils"></i>food</a>
+            <div class="nav__bar fas fa-bars" id="nav__bar"></div>
+            <nav class="nav__navbar">
+                <a href="#home">home</a>
+                <a href="#speciality">speciality</a>
+                <a href="#popular">popular</a>
+                <a href="#gallery">gallery</a>
+                <a href="#review">review</a>
+                <a href="#order">order</a>
+            </nav>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero__content" id="content">
+                <h1>food made with <span>Love</span></h2>
+                
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere aut reprehenderit sunt cum consequuntur,
+                     numquam velit quas distinctio quisquam corporis vero ipsum earum, pariatur tenetur quae iure. Cumque, necessitatibus nesciunt.
+                </p>
+                <a href="#" class="btn">order now</a>
+            </div>
+            <picture class="hero__image" id="image">
+                <img src="img/home-img.png" alt="">
+            </picture>
+        </div>
+    </section>
+    <!-- speciality Section -->
+    <section class="speciality">
+        <div class="container">
+            <h1 class="speciality__title">Our <span>Speciality</span></h1>
+            <!-- speciality box 1 -->
+            <div class="speciality__boxs">
+                <div class="speciality__box box">
+                    <img class="speciality__boxs--img" src="img/s-img-1.jpg" alt="">
+                    <div class="speciality__boxs--text-are">
+                        <img src="img/s-1.png" alt="">
+                        <h1 class="speciality__box--heading">tasty burger</h1>
+                        <p class="speciality__box--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero asperiores consequuntur adipisci ea. Facilis culpa error eum modi odit,
+                         non eligendi assumenda voluptas architecto tenetur, nulla vitae nostrum debitis!</p>
+                    </div>
+                </div>
+                <!-- speciality box 2 -->
+                <div class="speciality__box box">
+                    <img class="speciality__boxs--img" src="img/s-img-2.jpg" alt="">
+                    <div class="speciality__boxs--text-are">
+                        <img src="img/s-2.png" alt="">
+                        <h1 class="speciality__box--heading">tasty pizza</h1>
+                        <p class="speciality__box--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero asperiores consequuntur adipisci ea. Facilis culpa error eum modi odit,
+                         non eligendi assumenda voluptas architecto tenetur, nulla vitae nostrum debitis!</p>
+                    </div>
+                </div>
+                <!-- speciality box 3 -->
+                <div class="speciality__box box">
+                    <img class="speciality__boxs--img" src="img/s-img-3.jpg" alt="">
+                    <div class="speciality__boxs--text-are">
+                        <img src="img/s-3.png" alt="">
+                        <h1 class="speciality__box--heading">cold ice-cream</h1>
+                        <p class="speciality__box--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero asperiores consequuntur adipisci ea. Facilis culpa error eum modi odit,
+                         non eligendi assumenda voluptas architecto tenetur, nulla vitae nostrum debitis!</p>
+                    </div>
+                </div>
+                <!-- speciality box 4 -->
+                <div class="speciality__box box">
+                    <img class="speciality__boxs--img" src="img/s-img-4.jpg" alt="">
+                    <div class="speciality__boxs--text-are">
+                        <img src="img/s-4.png" alt="">
+                        <h1 class="speciality__box--heading">cold drinks</h1>
+                        <p class="speciality__box--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero asperiores consequuntur adipisci ea. Facilis culpa error eum modi odit,
+                         non eligendi assumenda voluptas architecto tenetur, nulla vitae nostrum debitis!</p>
+                    </div>
+                </div>
+                <!-- speciality box 5 -->
+                <div class="speciality__box box ">
+                    <img class="speciality__boxs--img" src="img/s-img-5.jpg" alt="">
+                    <div class="speciality__boxs--text-are">
+                        <img src="img/s-5.png" alt="">
+                        <h1 class="speciality__box--heading">tasty sweets</h1>
+                        <p class="speciality__box--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero asperiores consequuntur adipisci ea. Facilis culpa error eum modi odit,
+                         non eligendi assumenda voluptas architecto tenetur, nulla vitae nostrum debitis!</p>
+                    </div>
+                </div>
+                <!-- speciality box 6 -->
+                <div class="speciality__box box">
+                    <img class="speciality__boxs--img" src="img/s-img-6.jpg" alt="">
+                    <div class="speciality__boxs--text-are">
+                        <img src="img/s-6.png" alt="">
+                        <h1 class="speciality__box--heading">healty breakfast</h1>
+                        <p class="speciality__box--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero asperiores consequuntur adipisci ea. Facilis culpa error eum modi odit,
+                         non eligendi assumenda voluptas architecto tenetur, nulla vitae nostrum debitis!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="food">
+        <div class="container">
+            <h1 class="food__title">Most <span>Popular</span> Foods</h1>
+            <div class="food__cards">
+                <!-- Food Card 1 -->
+                <div class="food__cards--box box">
+                    <span class="price-tag">$5-&20</span>
+                    <div class="food__card--img"><img src="img/p-1.jpg" alt=""></div>
+                    <h1 class="food__card--title">Tasty Burger</h1>
+                    <div class="food__card--stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="food__card--btn btn">order now</div>
+                </div>
+                <!-- Food Card 2 -->
+                <div class="food__cards--box box">
+                    <span class="price-tag">$5-&20</span>
+                    <div class="food__card--img"><img src="img/p-2.jpg" alt=""></div>
+                    <h1 class="food__card--title">Tasty Cakes</h1>
+                    <div class="food__card--stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="food__card--btn btn">order now</div>
+                </div>
+                <!-- Food Card 3 -->
+                <div class="food__cards--box box">
+                    <span class="price-tag">$5-&20</span>
+                    <div class="food__card--img"><img src="img/p-3.jpg" alt=""></div>
+                    <h1 class="food__card--title">Tasty Sweets</h1>
+                    <div class="food__card--stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="food__card--btn btn">order now</div>
+                </div>
+                <!-- Food Card 4 -->
+                <div class="food__cards--box box">
+                    <span class="price-tag">$5-&20</span>
+                    <div class="food__card--img"><img src="img/p-4.jpg" alt=""></div>
+                    <h1 class="food__card--title">Tasty Cupcakes</h1>
+                    <div class="food__card--stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="food__card--btn btn">order now</div>
+                </div>
+                <!-- Food Card 5 -->
+                <div class="food__cards--box box">
+                    <span class="price-tag">$5-&20</span>
+                    <div class="food__card--img"><img src="img/p-5.jpg" alt=""></div>
+                    <h1 class="food__card--title">Cold Drinks</h1>
+                    <div class="food__card--stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="food__card--btn btn">order now</div>
+                </div>
+                <!-- Food Card 6 -->
+                <div class="food__cards--box box">
+                    <span class="price-tag">$5-&20</span>
+                    <div class="food__card--img"><img src="img/p-6.jpg" alt=""></div>
+                    <h1 class="food__card--title">Cold Ice-Cream</h1>
+                    <div class="food__card--stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="food__card--btn btn">order now</div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section class="about-us">
+        <div class="container">
+            <h1 class="about-us__title">How It <span>Works</span></h1>
+            <div class="about-us__cards">
+                <div class="about-us__card">
+                    <img src="img/step-1.jpg" alt="" class="about-us__img">
+                    <h1 class="about-us__title">Choose Your Favorite Food</h1>
+                </div>
+                <div class="about-us__card">
+                    <img src="img/step-2.jpg" alt="" class="about-us__img">
+                    <h1 class="about-us__title">Free And Fast Delivery</h1>
+                </div>
+                <div class="about-us__card">
+                    <img src="img/step-3.jpg" alt="" class="about-us__img">
+                    <h1 class="about-us__title">Easy Payments Methods</h1>
+                </div>
+                <div class="about-us__card">
+                    <img src="img/step-4.jpg" alt="" class="about-us__img">
+                    <h1 class="about-us__title">And Finally, Enjoy Your Food</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery">
+        <div class="container">
+            <h1 class="gallery__title">Our Food <span>Gallery</span></h1>
+            <div class="gallery__cards">
+                <div class="gallery__card">
+                    <img class="gallery__card-img" src="img/g-1.jpg" alt="">
+                    <div class="gallery__card--text-area">
+                        <h1 class="gallery__card--heading">Tasty Food</h1>
+                        <p class="gallery__card--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consequatur aspernatur harum at debitis</p>
+                        <div class="gallery__card--btn btn">order now</div>
+                    </div>
+                </div>
+                <div class="gallery__card">
+                    <img class="gallery__card-img" src="img/g-2.jpg" alt="">
+                    <div class="gallery__card--text-area">
+                        <h1 class="gallery__card--heading">Tasty Food</h1>
+                        <p class="gallery__card--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consequatur aspernatur harum at debitis</p>
+                        <div class="gallery__card--btn btn">order now</div>
+                    </div>
+                </div>
+                <div class="gallery__card">
+                    <img class="gallery__card-img" src="img/g-3.jpg" alt="">
+                    <div class="gallery__card--text-area">
+                        <h1 class="gallery__card--heading">Tasty Food</h1>
+                        <p class="gallery__card--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consequatur aspernatur harum at debitis</p>
+                        <div class="gallery__card--btn btn">order now</div>
+                    </div>
+                </div>
+                <div class="gallery__card">
+                    <img class="gallery__card-img" src="img/g-4.jpg" alt="">
+                    <div class="gallery__card--text-area">
+                        <h1 class="gallery__card--heading">Tasty Food</h1>
+                        <p class="gallery__card--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consequatur aspernatur harum at debitis</p>
+                        <div class="gallery__card--btn btn">order now</div>
+                    </div>
+                </div>
+                <div class="gallery__card">
+                    <img class="gallery__card-img" src="img/g-5.jpg" alt="">
+                    <div class="gallery__card--text-area">
+                        <h1 class="gallery__card--heading">Tasty Food</h1>
+                        <p class="gallery__card--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consequatur aspernatur harum at debitis</p>
+                        <div class="gallery__card--btn btn">order now</div>
+                    </div>
+                </div>
+                <div class="gallery__card">
+                    <img class="gallery__card-img" src="img/g-6.jpg" alt="">
+                    <div class="gallery__card--text-area">
+                        <h1 class="gallery__card--heading">Tasty Food</h1>
+                        <p class="gallery__card--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consequatur aspernatur harum at debitis</p>
+                        <div class="gallery__card--btn btn">order now</div>
+                    </div>
+                </div>
+                <div class="gallery__card">
+                    <img class="gallery__card-img" src="img/g-7.jpg" alt="">
+                    <div class="gallery__card--text-area">
+                        <h1 class="gallery__card--heading">Tasty Food</h1>
+                        <p class="gallery__card--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consequatur aspernatur harum at debitis</p>
+                        <div class="gallery__card--btn btn">order now</div>
+                    </div>
+                </div>
+                <div class="gallery__card">
+                    <img class="gallery__card-img" src="img/g-8.jpg" alt="">
+                    <div class="gallery__card--text-area">
+                        <h1 class="gallery__card--heading">Tasty Food</h1>
+                        <p class="gallery__card--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consequatur aspernatur harum at debitis</p>
+                        <div class="gallery__card--btn btn">order now</div>
+                    </div>
+                </div>
+                <div class="gallery__card">
+                    <img class="gallery__card-img" src="img/g-9.jpg" alt="">
+                    <div class="gallery__card--text-area">
+                        <h1 class="gallery__card--heading">Tasty Food</h1>
+                        <p class="gallery__card--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consequatur aspernatur harum at debitis</p>
+                        <div class="gallery__card--btn btn">order now</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
