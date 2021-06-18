@@ -4,9 +4,7 @@
         padding: 1rem;
     }
   &__title{
-      text-align: center;
       @include heading;
-      font-size: 2.125rem;
       span{
           @include span;
       }
@@ -23,10 +21,12 @@
         border: 1.5rem solid rgba($white, 0.8);
         border-radius: 50%; 
         box-shadow: 0 0.5rem 1rem rgba($dark, 0.1);
-        @include mobile{
-            min-width: 26rem;
-        }
+        
       }
-  }
+    }
+    &__card-title{
+        @include card-title;
+        font-size: 2.125rem;
+    }
 
 }

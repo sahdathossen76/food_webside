@@ -1,0 +1,9 @@
+.review{
+    &__title{
+        text-align: center;
+        @include heading;
+        span{
+            @include span;
+        }
+    }
+}
