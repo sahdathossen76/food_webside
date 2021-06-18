@@ -45,6 +45,7 @@
         padding: 3rem auto;
         h1{
             @include heading;
+            text-align: start;
             span{
                 @include span;
             }
