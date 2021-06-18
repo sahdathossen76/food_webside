@@ -18,9 +18,9 @@
         margin-top: 5rem;
         padding: 2rem;
         background: rgba($dark-blue, 0.9);
-        border: 1rem solid rgba($white, 0.9);
+        border: 1rem solid $white;
         box-shadow: 0 0.5rem 1rem rgba($dark, 0.2);
-        border-radius: 0.7rem;
+        border-radius: 0.5rem;
         &--title{
             @include card-title;
             color: rgba($white, 0.9);
