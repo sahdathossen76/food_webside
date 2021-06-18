@@ -702,8 +702,106 @@ section {
 
 /*------------ contact Section ---------------*/
 .contact {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  overflow: hidden;
+}
+
+.contact__title {
+  text-align: center;
+  font-size: 3.125rem;
+  font-weight: 900;
+  font-family: "Nunito", sans-serif;
+  line-height: 1.2;
+  color: rgba(34, 33, 33, 0.9);
+  white-space: nowrap;
+}
+
+.contact__title span {
+  color: rgba(255, 56, 56, 0.9);
+}
+
+.contact__area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.5rem;
+  border: 1.6rem solid rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(34, 33, 33, 0.2);
+          box-shadow: 0 0.5rem 1rem rgba(34, 33, 33, 0.2);
+  border-radius: 0.7rem;
+}
+
+.contact__area--img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30rem;
+          flex: 1 1 30rem;
+}
+
+.contact__area--img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.7rem;
+}
+
+.contact__area--form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50rem;
+          flex: 1 1 50rem;
+  height: 100%;
+  width: 100%;
+  grid-column: contact;
+  margin-right: auto;
+}
+
+.contact__area--form input {
+  padding: 1rem;
+  margin: 1rem 0;
+  font-size: 1.7rem;
+  text-transform: none;
+  border-radius: .5rem;
+  width: 100%;
+  background: #fbfbfc;
+  border: 1px solid rgba(34, 33, 33, 0.2);
+  border-radius: 0.7rem;
+  font-size: 1.2rem;
+}
+
+.contact__area--form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "name     email" "number  food-name" "address  address" "button        .";
+  -webkit-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+  margin: 1.5rem;
+}
+
+.contact__name {
+  grid-column: name;
+}
+
+.contact__email {
+  grid-column: email;
+}
+
+.contact__number {
+  grid-column: number;
+}
+
+.contact__food-name {
+  grid-column: food-name;
+}
+
+.contact__masseage {
+  grid-column: address;
+}
+
+.contact__area--btn {
+  margin-right: auto;
 }
 
 /*------------Footer Start-------------*/

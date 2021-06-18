@@ -1,5 +1,75 @@
 /*------------ contact Section ---------------*/
 .contact{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    
+    overflow: hidden;
+    &__title{
+        @include heading;
+        span{
+            @include span;
+        }
+    }
+    &__area{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        border: 1.6rem solid rgba($white, 0.9);
+        box-shadow: 0 0.5rem 1rem rgba($dark, 0.2);
+        border-radius: 0.7rem;
+        &--img{
+            flex: 1 1 30rem;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 0.7rem;
+            }
+        }
+        &--form{
+            flex: 1 1 50rem;
+            height: 100%;
+            width: 100%;
+            grid-column: contact;
+            margin-right: auto;
+            input{
+                padding:1rem;
+                margin:1rem 0;
+                font-size: 1.7rem;
+                text-transform: none;
+                border-radius: .5rem;
+                width:100%;
+                background: #fbfbfc;
+                border: 1px solid rgba($dark, 0.2);
+                border-radius: 0.7rem;
+                font-size: 1.2rem;
+            }
+        }
+    }
+    &__area--form{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "name     email"
+                            "number  food-name"
+                            "address  address"
+                            "button        .";
+        column-gap: 1.5rem;
+        margin: 1.5rem;                 
+    }
+    &__name{
+        grid-column: name;
+    }
+    &__email{
+        grid-column: email;
+    }
+    &__number{
+        grid-column: number;
+    }
+    &__food-name{
+        grid-column: food-name;
+    }
+    &__masseage{
+        grid-column: address;
+    }
+    &__area--btn{
+        margin-right: auto;
+    }
 }
