@@ -1,4 +1,4 @@
-/*------------ Intro Section ---------------*/
+/*------------ Food Section ---------------*/
 .food{
     &__title{
         @include heading;
@@ -12,15 +12,11 @@
         flex-wrap: wrap;
         gap: 1.5rem;
         &--box{   
-            @include computer_lg{
+            @include computer_md ($min-screen : 1025px, $max-screen : 1950px){
                 flex: 1 1 35rem;
             }
         flex: 1 1 25rem;
-        text-align: center;
-        padding: 2rem;
-        background: $white;
-        position: relative;
-        border-radius: 0.5rem;
+        @include box;
         .price-tag{
             background: rgba($red, 0.9);
             position: absolute;
@@ -30,6 +26,8 @@
             padding: 0.8rem;
             font-size: 1.8rem;
             color: rgba($white, 0.9);
+            box-shadow: 0 0.5rem 1rem rgba($dark, 0.1);
+            border: .1rem solid rgba($dark, .2);
             border-radius: 0.5rem;
         }
         }

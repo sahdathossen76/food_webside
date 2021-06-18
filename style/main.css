@@ -202,13 +202,13 @@ section {
   display: none;
 }
 
-@media screen and (min-device-width: 170px) and (max-device-width: 769px) {
+@media screen and (min-device-width: 170px) and (max-device-width: 1036px) {
   .nav__bar {
     display: inline;
   }
 }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-device-width: 1036px) {
   .nav__navbar {
     position: absolute;
     top: 100%;
@@ -325,7 +325,7 @@ section {
   font-size: 1.7rem;
   font-weight: "Merriweather", serif;
   font-family: "Nunito", sans-serif;
-  color: rgba(167, 167, 167, 0.9);
+  color: rgba(34, 33, 33, 0.9);
 }
 
 .hero__image {
@@ -361,7 +361,7 @@ section {
   }
 }
 
-/*------------ Portfolio Section ---------------*/
+/*------------ Speciality Section ---------------*/
 .speciality__title {
   text-align: center;
   font-size: 3.125rem;
@@ -399,12 +399,6 @@ section {
   left: 0;
 }
 
-.speciality__boxs--text-are {
-  text-align: center;
-  padding: 2rem;
-  background: #FFFFFF;
-}
-
 .speciality__boxs--text-are img {
   margin: 1.5rem 0;
 }
@@ -418,17 +412,28 @@ section {
   white-space: nowrap;
 }
 
+.speciality__box--text {
+  font-size: 1.7rem;
+  font-weight: "Merriweather", serif;
+  font-family: "Nunito", sans-serif;
+  color: rgba(34, 33, 33, 0.9);
+  font-size: 1.2rem;
+}
+
 .box {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 30rem;
           flex: 1 1 30rem;
   position: relative;
+  padding: 2rem;
   overflow: hidden;
+  text-align: center;
+  background: #FFFFFF;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(34, 33, 33, 0.1);
           box-shadow: 0 0.5rem 1rem rgba(34, 33, 33, 0.1);
-  border: 0.1rem solid rgba(34, 33, 33, 0.3);
-  cursor: pointer;
+  border: 0.1rem solid rgba(34, 33, 33, 0.2);
   border-radius: .5rem;
+  cursor: pointer;
 }
 
 .box:hover .speciality__boxs--img,
@@ -438,7 +443,7 @@ section {
   transition: ease-in-out 250ms;
 }
 
-/*------------ Intro Section ---------------*/
+/*------------ Food Section ---------------*/
 .food__title {
   text-align: center;
   font-size: 3.125rem;
@@ -466,14 +471,19 @@ section {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 25rem;
           flex: 1 1 25rem;
-  text-align: center;
-  padding: 2rem;
-  background: #FFFFFF;
   position: relative;
-  border-radius: 0.5rem;
+  padding: 2rem;
+  overflow: hidden;
+  text-align: center;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(34, 33, 33, 0.1);
+          box-shadow: 0 0.5rem 1rem rgba(34, 33, 33, 0.1);
+  border: 0.1rem solid rgba(34, 33, 33, 0.2);
+  border-radius: .5rem;
+  cursor: pointer;
 }
 
-@media screen and (min-device-width: 1281px) {
+@media screen and (min-device-width: 1025px) and (max-device-width: 1950px) {
   .food__cards--box {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 35rem;
@@ -489,10 +499,13 @@ section {
   font-size: 1.7rem;
   font-weight: "Merriweather", serif;
   font-family: "Nunito", sans-serif;
-  color: rgba(167, 167, 167, 0.9);
+  color: rgba(34, 33, 33, 0.9);
   padding: 0.8rem;
   font-size: 1.8rem;
   color: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(34, 33, 33, 0.1);
+          box-shadow: 0 0.5rem 1rem rgba(34, 33, 33, 0.1);
+  border: 0.1rem solid rgba(34, 33, 33, 0.2);
   border-radius: 0.5rem;
 }
 
@@ -513,7 +526,7 @@ section {
   color: rgba(255, 215, 0, 0.9);
 }
 
-/*------------ About Me Section ---------------*/
+/*------------ About Section ---------------*/
 .about-us .container {
   padding: 1rem;
 }
@@ -573,6 +586,7 @@ section {
   font-size: 2.125rem;
 }
 
+/*------------ Gallery Section ---------------*/
 .gallery__title {
   text-align: center;
   font-size: 3.125rem;
@@ -603,15 +617,44 @@ section {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 30rem;
           flex: 1 1 30rem;
-  position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  position: relative;
+  padding: 2rem;
   overflow: hidden;
-  border: 1rem solid rgba(255, 255, 255, 0.8);
+  text-align: center;
+  background: #FFFFFF;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(34, 33, 33, 0.1);
           box-shadow: 0 0.5rem 1rem rgba(34, 33, 33, 0.1);
+  border: 0.1rem solid rgba(34, 33, 33, 0.2);
+  border-radius: .5rem;
   cursor: pointer;
-  border-radius: 0.5rem;
+  padding: 0;
+  border: 1rem solid rgba(255, 255, 255, 0.8);
+}
+
+@media screen and (min-device-width: 1514px) and (max-device-width: 1928px) {
+  .gallery__card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 40rem;
+            flex: 1 1 40rem;
+  }
+}
+
+@media screen and (min-device-width: 881px) and (max-device-width: 1128px) {
+  .gallery__card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 22rem;
+            flex: 1 1 22rem;
+  }
+}
+
+@media screen and (min-device-width: 660px) and (max-device-width: 880px) {
+  .gallery__card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 35rem;
+            flex: 1 1 35rem;
+  }
 }
 
 .gallery__card:hover .gallery__card--text-area,
@@ -640,7 +683,7 @@ section {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(34, 33, 33, 0.3);
+  background: rgba(34, 33, 33, 0.6);
   position: absolute;
   text-align: center;
   padding: 2rem;
@@ -662,7 +705,7 @@ section {
   font-size: 1.7rem;
   font-weight: "Merriweather", serif;
   font-family: "Nunito", sans-serif;
-  color: rgba(167, 167, 167, 0.9);
+  color: rgba(34, 33, 33, 0.9);
   font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.9);
 }
@@ -672,6 +715,7 @@ section {
   padding: 0.8rem 1.5rem;
 }
 
+/*------------ Review Section ---------------*/
 .review__title {
   text-align: center;
   font-size: 3.125rem;
@@ -700,9 +744,11 @@ section {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 25rem;
           flex: 1 1 25rem;
-  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin-top: 5rem;
   padding: 2rem;
+  text-align: center;
   background: rgba(51, 51, 51, 0.9);
   border: 1rem solid #FFFFFF;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(34, 33, 33, 0.2);
@@ -794,8 +840,13 @@ section {
   width: 100%;
   border: 1px solid rgba(34, 33, 33, 0.2);
   border-radius: 0.5rem;
-  font-size: 2.2rem;
   text-transform: capitalize;
+}
+
+@media screen and (min-device-width: 500px) {
+  .contact__area--form input {
+    font-size: 2.2rem;
+  }
 }
 
 .contact__area--form {
@@ -883,7 +934,7 @@ section {
   font-size: 1.7rem;
   font-weight: "Merriweather", serif;
   font-family: "Nunito", sans-serif;
-  color: rgba(167, 167, 167, 0.9);
+  color: rgba(34, 33, 33, 0.9);
   text-align: center;
   color: rgba(255, 255, 255, 0.9);
   margin-top: 1.2rem;

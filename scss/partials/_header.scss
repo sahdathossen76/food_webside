@@ -31,12 +31,12 @@
         border-radius: .3rem;
         padding: 0.4rem 1.5rem;
         display: none;
-        @include tablet ($min-screen : 170px, $max-screen : 769px){
+        @include tablet ($min-screen : 170px, $max-screen : 1036px){
             display: inline;
         }
     }
     &__navbar{
-        @include mobile ($max-screen : 768px){
+        @include mobile ($max-screen : 1036px){
             position: absolute;
             top: 100%;
             left: 0;

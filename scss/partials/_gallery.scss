@@ -1,3 +1,4 @@
+/*------------ Gallery Section ---------------*/
 .gallery{
     
     &__title{
@@ -13,14 +14,20 @@
         gap: 1.5rem;
     }
     &__card{
+        @include computer_md ($min-screen : 1514px, $max-screen : 1928px){
+            flex: 1 1 40rem;
+        }
+        @include computer_md ($min-screen : 881px, $max-screen : 1128px){
+            flex: 1 1 22rem;
+        }
+        @include tablet ($min-screen : 660px, $max-screen : 880px){
+            flex: 1 1 35rem;
+        }
         flex: 1 1 30rem;
-        position: relative;
         box-sizing: border-box;
-        overflow: hidden;
+        @include box;
+        padding: 0;
         border: 1rem solid rgba($white, 0.8);
-        box-shadow: 0 0.5rem 1rem rgba($dark, 0.1);
-        cursor: pointer;
-        border-radius: 0.5rem;
         &:hover .gallery__card--text-area,
         &:focus .gallery__card--text-area{
             top: 0;
@@ -37,7 +44,7 @@
             left: 0;
             height: 100%;
             width: 100%;
-            background: rgba($dark, 0.3);
+            background: rgba($dark, 0.6);
             position: absolute;
             text-align: center;
             padding: 2rem

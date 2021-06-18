@@ -1,3 +1,4 @@
+/*------------ Review Section ---------------*/
 .review{
     
     &__title{
@@ -14,9 +15,10 @@
     }
     &__card{
         flex: 1 1 25rem;
-        text-align: center;
+        box-sizing: border-box;
         margin-top: 5rem;
         padding: 2rem;
+        text-align: center;
         background: rgba($dark-blue, 0.9);
         border: 1rem solid $white;
         box-shadow: 0 0.5rem 1rem rgba($dark, 0.2);

@@ -1,4 +1,4 @@
-/*------------ Portfolio Section ---------------*/
+/*------------ Speciality Section ---------------*/
 .speciality{
     &__title{
         @include heading;
@@ -10,8 +10,6 @@
     &__boxs{
         display: flex;
         flex-wrap: wrap;
-        //display: grid;
-        //grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
         align-items: center;
         gap: 1.5rem;
         &--img{
@@ -25,9 +23,6 @@
         }
     }
     &__boxs--text-are{
-        text-align: center;
-        padding: 2rem;
-        background: $white;
         img{
             margin: 1.5rem 0;
         }
@@ -35,16 +30,15 @@
     &__box--heading{
         @include card-title;
     }
+    &__box--text{
+        @include text;
+        font-size: 1.2rem;
+    }
 
 }
 .box{
     flex: 1 1 30rem;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 0.5rem 1rem rgba($dark, 0.1);
-    border: .1rem solid rgba($dark, .3);
-    cursor: pointer;
-    border-radius: .5rem;
+    @include box;
     &:hover .speciality__boxs--img,
     &:focus .speciality__boxs--img{
         top: 0;
